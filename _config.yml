@@ -1,24 +1,60 @@
-# Dependencies
-markdown:         kramdown
-highlighter:      pygments
+title: "Your Name"
+description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
+about: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
+location: "Your Region, Country"
+email: your-email@example.com
+baseurl: ""
 
-# Permalinks
-permalink:        pretty
+url: "http://himsel.me" # replace by your site's url
+twitter_username: your-name
+github_username:  your-name
+author: "Your Name"
 
-# Setup
-title:            James Kent Portfolio
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
-baseurl:          /
+# google analytics tracking code, please change the value
+g_analytics: ""
 
-author:
-  name:           'James Kent'
-  url:            https://twitter.com/mdo
+# add your disqus to enable comments
+disqus_shortname:
 
+# language settings
+isolang: en
+close_btn: "Close"
+home_btn: "Home"
+projects_btn: "Projects"
+posts_btn: "Posts"
+imprint_btn: "Imprint"
+name_badge: "an article by"
+rss_badge: "Subscribe feed!"
 
-# Custom vars
-version:          2.1.0
+# build settings
+markdown: kramdown
+highlighter: rouge
 
-github:
-  repo:           https://github.com/poole/hyde
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    tab_width: 4
+
+# third party gems
+gems:
+  - jekyll-paginate
+  - jekyll-gist
+  - jemoji
+
+whitelist:
+  - jekyll-paginate
+  - jekyll-gist
+  - jemoji
+
+# exclude files
+exclude:
+  - LICENSE
+  - README.md
